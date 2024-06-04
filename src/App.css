@@ -1,38 +1,224 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html,
+body {
+  height: 100%;
+  width: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.main {
+  height: 100vh;
+  width: 100%;
+  position: relative;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.nva {
+  height: 80px;
+  width: 100%;
+  /* background-color: red; */
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-evenly;
 }
 
-.App-link {
-  color: #61dafb;
+.starIcon1{
+  position: absolute;
+  right: 7%;
+  top: 4%;
+}
+.starIcon1 img{
+  height: 50px;
+  width: 50px;
+}
+.starIcon2{
+  position: absolute;
+  left: 4%;
+}
+.starIcon2 img{
+  height: 40px;
+  width: 40px;
+}
+.itmes {
+  margin-right: 40px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.itmes ul {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+ul li {
+  list-style: none;
+  cursor: pointer;
+  font-size: 20px;
+  font-family: clash display;
+}
+
+.btn {
+  padding: 15px 20px;
+  border: none;
+  outline: none;
+  background-color: #151515;
+  color: #eee;
+  border-radius: 4px;
+  font-weight: 600;
+  font-family: Clash Display Light;
+  cursor: pointer;
+  transition: all 0.25s ease-out;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+}
+
+.container{
+  margin-left: 10%;
+  margin-top: 8%;
+  height: 40vh;
+  width: 45vw;
+  position: relative;
+  /* background-color: red; */
+}
+.img{
+  position: absolute;
+  left: 16%;
+  bottom: 30%;
+}
+.img img{
+  height: 350px;
+  width: 400px;
+}
+.textCon{
+  position: absolute;
+ 
+}
+.textCon h1{
+  font-size: 60px;
+  font-family: clash display;
+  font-weight: bold;
+  letter-spacing: 3px;
+  z-index: 99;
+}
+.textCon p{
+  font-size: 18px;
+  color: #767171;
+  margin-top: 5%;
+  font-family: Clash Display Light;
+}
+.btnCon{
+  margin-top: 5%;
+}
+.btnIcon{
+  border: none;
+  outline: none;
+  background-color: #fff;
+  margin-left: 8%;
+  font-size: 18px;
+  font-family: Clash Display;
+}
+.btnIcon i{
+  letter-spacing: 16px;
+}
+.container1{
+  height: 30vh;
+  width: 40vw;
+  /* background-color: red; */
+  position: relative;
+}
+.starImg{
+  position: absolute;
+  left: 40%;
+  top: 16%;
+}
+.banner{
+  position: absolute;
+  left: 20%;
+}
+.banner img{
+  height: 350px;
+  width: 400px;
+}
+.container2{
+  height: 70vh;
+  width: 40vw;
+  /* background-color: red; */
+  position: absolute;
+  left: 50%;
+  top: 10%;
+}
+.ellipse{
+  position: absolute;
+  left: 10%;
+  z-index: -1;
+}
+.ellipse img{
+  height: 500px;
+  width: 600px;
+}
+.iphone1{
+  position: absolute;
+  right: 50%;
+  top: 15%;
+  left: 20%;
+}
+
+.iphone2{
+  position: absolute;
+  left: 40%;
+  top: 30%;
+  z-index: -1;
+} 
+.iphone3{
+  position: absolute;
+  
+} 
+.blurImg{
+  position: absolute;
+  top: 55%;
+  z-index: -1;
+}
+@media(max-width:768px){
+  .nva {
+      height: 80px;
+      width: 100%;
   }
-  to {
-    transform: rotate(360deg);
+  .starIcon1{
+      left: 96%;
+      top: 4%;
   }
+  .banner{
+      left: 20%;
+      top: 90%;
+  }
+  .starImg{
+      top: 130%;
+      left: 40%;
+  }
+  .ellipse{
+      top: 20%;
+      left: 10%;
+      z-index: -1;
+  }
+  .iphone1{
+      right: 50%;
+      top: 15%;
+      left: 30%;
+  }
+  
+   .iphone2{
+      position: absolute;
+      left: 60%;
+      top: 30%;
+      z-index: -1;
+   } 
+  .iphone3{
+      position: absolute;
+      
+  } 
+  
 }
